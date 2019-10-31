@@ -1,0 +1,134 @@
+
+/*Petits écrans*/
+@media screen and (max-width: 992px) {
+
+    body {
+        background: conic-gradient(at 0% 30%, grey 10%, white 30%, grey 50%) no-repeat;
+        font-family: Geneva, Verdana, Tahoma, sans-serif;
+        font-size: large;
+        min-height: 100vh;
+    }
+    section{
+        margin-top: 10vh;
+    }
+    img{
+        display: none;
+    }
+    .main-title {
+        font-family: Geneva, Verdana,
+            Tahoma,
+            sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: large;
+        color: lightgrey;
+        ;
+
+    }
+
+    .main-title {
+        animation: animtitrecolor 5s linear;
+    }
+
+    @keyframes animtitrecolor {
+        0% {
+            color: darkslategrey;
+            
+        }
+
+        100% {
+            color: lightgrey;
+        }
+    }
+
+    .card {
+        margin-bottom: 5%;
+        animation: animcardopacity 5s
+    }
+
+
+    @keyframes animcardopacity {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+}
+/*Grands écrans*/
+@media screen and (min-width: 993px) {
+   body {
+       background: conic-gradient(at 0% 30%, grey 10%, white 30%, grey 50%) no-repeat;
+       font-family: Geneva, Verdana, Tahoma, sans-serif;
+       font-size: large;
+       min-height: 100vh;
+
+   }
+
+   .main-title {
+       font-family: Geneva, Verdana,
+           Tahoma,
+           sans-serif;
+       font-style: italic;
+       font-weight: bold;
+       color: lightgrey;
+       margin-bottom: 2rem;
+
+   }
+
+   .main-title {
+       animation: animtitrecolor 5s linear;
+   }
+
+   @keyframes animtitrecolor {
+       0% {
+           color: darkslategrey;
+          
+       }
+
+       100% {
+            color: lightgrey;
+       }
+   }
+
+   .card {
+       margin-bottom: 5%;
+       animation: animcardopacity 5s
+   }
+
+
+   @keyframes animcardopacity {
+       0% {
+           opacity: 0;
+       }
+
+       50% {
+           opacity: 0.5;
+       }
+
+       100% {
+           opacity: 1;
+       }
+
+   }
+
+   .card:hover {
+       transform: scale(1.15);
+       transition-duration: 3s;
+       transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   }
+
+   .card:not(hover) {
+       transform: scale(1);
+       transition-duration: 3s;
+       transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   }
+}
